@@ -1,0 +1,53 @@
+<div class = "card-container">
+    <div *ngFor="let vehicle of vehicles">
+        <mat-card class="vehicle-card">
+            <mat-card-header>
+            <mat-card-title>{{vehicle.id}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{vehicle.year}}</p>
+                <p>{{vehicle.make}}</p>
+                <p>{{vehicle.model}}</p>              
+            </mat-card-content> 
+            <div class = "button-container">
+                <button (click)="delete(vehicle)" mat-icon-button color="primary" class="trash">
+                    <mat-icon>delete</mat-icon>
+                </button>
+                <button (click)="update(vehicle)" mat-icon-button color="primary" class="trash">
+                    <mat-icon>edit</mat-icon>
+                </button>
+            </div>
+        </mat-card>
+    </div>
+</div>
+
+<div class = "error-container">
+    <p> {{errorMessage }} </p>
+</div>
+
+<div class = "add-container">
+    <mat-form-field class = "form" appearance="fill" >
+        <mat-label>Vehicle ID</mat-label>
+        
+        <input matInput [(ngModel)]="vehicle.id">
+      </mat-form-field>
+      <mat-form-field class = "form" appearance="fill">
+        <mat-label>Year</mat-label>
+        <input matInput [(ngModel)]="vehicle.year">
+      </mat-form-field>
+      <mat-form-field class = "form" appearance="fill">
+        <mat-label>Make</mat-label>
+        <input matInput [(ngModel)]="vehicle.make">
+      </mat-form-field>
+      <mat-form-field class = "form" appearance="fill">
+        <mat-label>Model</mat-label>
+        <input matInput [(ngModel)]="vehicle.model">
+      </mat-form-field>
+      
+
+</div>
+
+<div class = "add-container">
+    <button (click)="add()" mat-raised-button color="primary">Add Vehicle</button>
+    <button (click)="reset()" mat-raised-button color="primary">Reset Fields</button>
+</div>

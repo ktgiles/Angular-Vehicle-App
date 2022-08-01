@@ -1,0 +1,35 @@
+<div class="big-div">
+    <div class = "forms-container">
+
+        <mat-form-field class = "form" appearance="fill" >
+            <mat-label>First Name</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <mat-form-field class = "form" appearance="fill">
+            <mat-label>Last Name</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class = "forms-container">
+    <mat-form-field class = "form" appearance="fill">
+            <mat-label>Email Address</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <mat-form-field class = "form" appearance="fill">
+            <mat-label>Phone Number</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class = "pw-container">
+        <mat-form-field>
+            <input class = "form" matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </mat-form-field>
+    </div> 
+    <div class = "pw-container">
+        <mat-form-field>
+            <input class = "form" matInput placeholder="Confirm your password" [type]="hide ? 'password' : 'text'">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </mat-form-field>
+    </div>
+</div>

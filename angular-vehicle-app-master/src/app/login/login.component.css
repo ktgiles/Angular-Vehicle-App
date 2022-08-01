@@ -1,0 +1,31 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+    
+  }
+
+  .form{
+      margin-bottom: 10px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 40px;
+  }
+
+  .big-div{
+      background-color: rgb(169, 169, 198);
+  }
+
+  .error-container{
+      color: darkred;
+      display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }

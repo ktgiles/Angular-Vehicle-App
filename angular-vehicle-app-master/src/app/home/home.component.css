@@ -1,0 +1,17 @@
+.responsive {
+    width: 20%;
+    height: auto;
+    margin-left: 40%;    
+}
+
+.img-container {
+    background-color: white;
+}
+
+.words{
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}

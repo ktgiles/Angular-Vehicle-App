@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+    <span>Vehicle App</span>
+    <nav>
+        <a [routerLink]="['login']">Login</a>
+        <a [routerLink]="['signup']">Register</a>
+        <a [routerLink]="['home']">Home</a>
+        <a [routerLink]="['dashboard']">Dashboard</a>
+        <button (click)="logout()" >Logout</button>
+    </nav>
+</mat-toolbar>
+  

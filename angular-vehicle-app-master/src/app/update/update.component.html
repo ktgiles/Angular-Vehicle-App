@@ -1,0 +1,27 @@
+<div class = "add-container">
+    <mat-form-field class = "form" appearance="fill" >
+        <mat-label>Vehicle ID</mat-label>
+        
+        <input matInput [(ngModel)]="vehicle.id" [disabled]="true">
+      </mat-form-field>
+      <mat-form-field class = "form" appearance="fill">
+        <mat-label>Year</mat-label>
+        <input matInput [(ngModel)]="vehicle.year">
+      </mat-form-field>
+      <mat-form-field class = "form" appearance="fill">
+        <mat-label>Make</mat-label>
+        <input matInput [(ngModel)]="vehicle.make">
+      </mat-form-field>
+      <mat-form-field class = "form" appearance="fill">
+        <mat-label>Model</mat-label>
+        <input matInput [(ngModel)]="vehicle.model">
+      </mat-form-field>
+      
+
+</div>
+
+<div class = "add-container">
+    <button (click)="update()" mat-raised-button color="primary">Update Vehicle</button>
+    <button (click)="cancel()" mat-raised-button color="warn">Cancel</button>
+
+</div>

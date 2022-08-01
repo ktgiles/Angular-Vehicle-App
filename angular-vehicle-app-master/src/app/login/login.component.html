@@ -1,0 +1,23 @@
+<div class = "big-div">
+    
+    <div class = "main-container">
+        <div class = "login-container">
+            <mat-form-field class = "form" appearance="fill" >
+                <mat-label>Enter Username</mat-label>       
+                <input matInput [(ngModel)]="username">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input [(ngModel)]="password" class = "form" matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class = "error-container">
+        <p>{{this.errorMessage}}</p>
+        </div>
+        <div class= "button-container">
+            <button (click)="login()" mat-raised-button color="primary">Log In</button>
+            
+        </div>
+    </div>
+</div>
